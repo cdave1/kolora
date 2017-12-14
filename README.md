@@ -1,0 +1,3 @@
+# KOLORA
+
+A palette editor.
