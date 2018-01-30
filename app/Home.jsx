@@ -6,6 +6,10 @@ import superagent from 'superagent';
 import Header from './Header.jsx';
 import Palette from './Palette.jsx';
 
+import { Calendar } from 'antd';
+//import 'antd/dist/antd.css';
+import './main.less';
+
 class Home extends React.Component {
     constructor(props) {
         super(props);
@@ -31,7 +35,7 @@ class Home extends React.Component {
             return (
                 <div>
                     <h1>Kolora</h1>
-    
+
                     {this.state.palettes.map((palette, index) => {
                        return <div><h4>{palette.name}</h4><Palette formats={palette.formats} /></div> 
                     })}
